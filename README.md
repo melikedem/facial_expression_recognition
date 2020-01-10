@@ -1,1 +1,4 @@
-# facial_expression_recognition
+
+  Facial expression recognition is an active research area in computer vision. In this project we decide to take 2 different deep learning approaches to facial expression recognition using 2 different approaches and compared the results.  In our first approach we designed and trained a convolutional neural network from scratch. In the second approach we used a pretrained model to extract features from images and trained a shallow model to learn expressions. For the pre-trained model we used an InceptionResnetV1 trained on VGGFace2 dataset. We implemented these models in PyTorch, we used the InceptionResnetV1 model from facenet-pytorch library. We trained all our models on Google Colab using GPU’s.
+  
+  Our goal was to correctly classify an image with a person’s face into 1 of 7 emotion categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). We used Kaggle’s FER2013 dataset to train and test or models. The images are greyscale and 48x48 pixels. Training set consists of 28,709 examples. Our validation set has 3,589 examples and the test set contains 3,589 examples. 
